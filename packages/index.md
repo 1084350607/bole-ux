@@ -4,11 +4,11 @@ sidebar: false
 
 hero:
   name: Bole-tool-set
-  text: Collection of front-end tools
-  tagline: Collection of Essential Vue Composition Utilities
+  text: Less is more, make front-end easier 
+  tagline: A collection of front-end tools
   image:
-    src: /favicon.svg
-    alt: VueUse
+    src: 
+    alt: 
   actions:
     - theme: brand
       text: Get Started
