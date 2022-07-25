@@ -4,11 +4,11 @@ export default {
   themeConfig: {
     siteTitle: "Datalyst-ToolBox",
     nav: [
-      { text: "Guide", link: "/guild/" },
-      { text: "Utils", link: "../hooks/useArray" },
-      { text: "Hooks", link: "../hooks/useArray" },
-      { text: "Components", link: "../hooks/useArray" },
-      { text: "Styles", link: "../hooks/useArray" },
+      { text: "Guide", link: "/guide/" },
+      { text: "Utils", link: "/utils/" },
+      { text: "Hooks", link: "/hooks/" },
+      { text: "Components", link: "/components/" },
+      { text: "Styles", link: "/styles/" },
     ],
     sidebar: {
       "/guild/": [
