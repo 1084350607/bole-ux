@@ -13,6 +13,11 @@ You can also use `npm` or `yarn`, but not recommondly.
 仓库模式：menorepo
 
 开发方式：基于Vitest进行TDD模式进行开发，保证完整的测试用例，先测试用例规定上层用法
+
+TODO:
+
+- [ ] 编写vite插件，Demo文件自动添加到markdown
+
 ## Hooks 
 
 - [ ] 设计和业务相关的Hooks，高可复用性
