@@ -1,4 +1,4 @@
-# Bole-tool-set
+# Bole-ux
 
 This project is a `monorepo` based on `pnpm`.
 
