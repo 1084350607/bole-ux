@@ -2,16 +2,17 @@
   "compilerOptions": {
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "esModuleInterop": true,      
+    "moduleResolution": "node",
     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "@vueuse/components": ["./packages/components/index.ts"],
-      "@vueuse/components/*": ["./packages/hooks/*"],
-      "@vueuse/hooks": ["./packages/hooks/index.ts"],
-      "@vueuse/hooks/*": ["./packages/hooks/*"],
-      "@vueuse/utils": ["./packages/utils/index.ts"],
-      "@vueuse/utils/*": ["./packages/utils/*"],
+      "@boleux/components": ["./packages/components/index.ts"],
+      "@boleux/components/*": ["./packages/hooks/*"],
+      "@boleux/hooks": ["./packages/hooks/index.ts"],
+      "@boleux/hooks/*": ["./packages/hooks/*"],
+      "@boleux/utils": ["./packages/utils/index.ts"],
+      "@boleux/utils/*": ["./packages/utils/*"],
     }, 
     "types": [],
 
@@ -21,7 +22,9 @@
   },
   "include": [
     "packages",
+    "packages/*.ts",
     "packages/.vitepress/*.ts",
+    "playgrounds/*",
     "vitest.config.ts"
   ],
   "exclude": [

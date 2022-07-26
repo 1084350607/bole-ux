@@ -7,9 +7,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@vueuse/hooks': resolve(__dirname, 'packages/hooks/index.ts'),
-      '@vueuse/utils': resolve(__dirname, 'packages/utils/index.ts'),
-      '@vueuse/components': resolve(__dirname, 'packages/components/index.ts'),
+      '@boleux/hooks': resolve(__dirname, 'packages/hooks/index.ts'),
+      '@boleux/utils': resolve(__dirname, 'packages/utils/index.ts'),
+      '@boleux/components': resolve(__dirname, 'packages/components/index.ts'),
     },
   },
 })
