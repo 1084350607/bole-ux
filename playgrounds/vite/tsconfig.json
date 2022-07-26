@@ -15,7 +15,7 @@
     "paths": {
       "@boleux/hooks": ["../../packages/hooks/index.ts"],
       "@boleux/hooks/*": ["../../packages/hooks/*"],
-    }, 
+    },
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
   "references": [{ "path": "./tsconfig.node.json" }]
