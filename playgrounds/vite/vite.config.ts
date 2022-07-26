@@ -8,6 +8,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@boleux/hooks': resolve(__dirname, '../../packages/hooks/index.ts'),
+      '@boleux/utils': resolve(__dirname, '../../packages/utils/index.ts')
     },
   },
 })
