@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useArray } from '@boleux/hooks'
 
-const { array, pushItem , deleteItem } = useArray()
+const { array, addItem , deleteItem } = useArray()
 
 console.log(array)
 </script>
@@ -12,6 +12,6 @@ console.log(array)
       <span>item is : {{ item }}</span>
       <!-- <button @click="deleteItem(index)">Delete {{ index }}</button> -->
     </template>
-    <button @click="pushItem(123)">add</button>
+    <button @click="addItem(123)">add</button>
   </div>
 </template>

@@ -1,25 +1,27 @@
-import { ref } from 'vue'
+import { MayBeComputedRef, MayBeRef } from './../../../utils/types';
+import { Ref, ref } from 'vue'
+import { resolveUnRef } from '@boleux/utils';
 
-export function useArray<T>() {
-  const array = ref([1,3,4,5])
+export function useArray<T>(
+  list: MayBeRef<T>[]
+) {
+  const array = ref<Ref<T>[]>(resolveUnRef(list))
 
-  const pushItem = (item: number) => {
+  const addItem = (item: T) => {
     array.value.push(item)
   }
 
   const deleteItem = (index: number) => {
-    for(let i = 0; i < array.value.length; i++) {
-      if (i === index) {
-        array.value.slice(i, 1)
+    console.log('deleteItem')
+  }
 
-        return
-      }
-    }
+  const insertItem = (index: number) => {
+    console.log('insertItem')
   }
 
   return {
     array,
     deleteItem,
-    pushItem
+    addItem,
   }
 }

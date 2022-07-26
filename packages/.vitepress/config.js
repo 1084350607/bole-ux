@@ -71,3 +71,9 @@ export default {
     },
   },
 };
+
+const functionSiderBar = getFunctionSiderBar;
+
+function getFunctionSiderBar() {
+  // TODO: handle export siderBar
+}
