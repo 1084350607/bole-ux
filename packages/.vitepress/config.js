@@ -27,7 +27,7 @@ export default {
           text: "Array",
           items: [
             // This shows `/guide/index.md` page.
-            { text: "useArray", link: "../" }, // /guide/index.md
+            { text: "useArray", link: "../hooks/shared/useArray/index.md" }, // /guide/index.md
             { text: "useArrayMap", link: "../hooks/useArrayMap.md" }, // /guide/two.md
             { text: "useArrayFind", link: "../hooks/useArrayFind.md" }, // /guide/two.md
             { text: "useArrayEvery", link: "../hooks/useArrayEvery.md" }, // /guide/one.md

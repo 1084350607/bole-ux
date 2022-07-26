@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
+    "jsx": "preserve",
     "target": "es2016",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     "module": "commonjs",                                /* Specify what module code is generated. */
-    "esModuleInterop": true,      
+    "esModuleInterop": true,
     "moduleResolution": "Node",
     "forceConsistentCasingInFileNames": true,
     "paths": {
@@ -12,7 +13,7 @@
       "@boleux/hooks/*": ["./packages/hooks/*"],
       "@boleux/utils": ["./packages/utils/index.ts"],
       "@boleux/utils/*": ["./packages/utils/*"],
-    }, 
+    },
     "types": [],
 
     /* Type Checking */
