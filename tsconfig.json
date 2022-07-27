@@ -5,6 +5,7 @@
     "module": "commonjs",                                /* Specify what module code is generated. */
     "esModuleInterop": true,
     "moduleResolution": "Node",
+    "noImplicitAny": false,
     "forceConsistentCasingInFileNames": true,
     "paths": {
       "@boleux/components": ["./packages/components/index.ts"],
