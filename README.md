@@ -16,8 +16,8 @@ You can also use `npm` or `yarn`, but not recommondly.
 
 TODO:
 
-- [x] 编写vite插件，Demo文件自动添加到markdown
-- [x] 脚本工具
+- [ ] 编写vite插件，Demo文件自动添加到markdown
+- [x] 脚本：根据目录自动生成siderbar结构树形结构
 
 ## Hooks 
 
