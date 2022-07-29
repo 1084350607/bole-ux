@@ -16,8 +16,8 @@ You can also use `npm` or `yarn`, but not recommondly.
 
 TODO:
 
-- [ ] 编写vite插件，Demo文件自动添加到markdown
-- [ ] 脚本工具
+- [x] 编写vite插件，Demo文件自动添加到markdown
+- [x] 脚本工具
 
 ## Hooks 
 
