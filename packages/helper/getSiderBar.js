@@ -21,6 +21,7 @@ export const getSiderBar = (type) => {
   })
   let queue = [...dirs]
   
+  // 遍历多叉树
   while (queue.length) {
     let len = queue.length
 
@@ -34,9 +35,7 @@ export const getSiderBar = (type) => {
       })
       queue.push(...children)
 
-      if (!children.length) {
-        result.push(cur)
-      }
+      if (!children.length) result.push(cur)
     }
  }
 
