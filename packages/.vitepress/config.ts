@@ -1,3 +1,9 @@
+import { resolve } from 'path'
+import { getSiderBar } from '../helper/getSiderBar.js'
+
+const utilsSiderBar = getSiderBar('utils')
+const hooksSiderBar = getSiderBar('hooks')
+
 export default {
   title: "boleTools",
   description: "Bole frontend tools",
@@ -25,25 +31,13 @@ export default {
       "/hooks/": [
         {
           text: "Array",
-          items: [
-            // This shows `/guide/index.md` page.
-            { text: "useArray", link: "../hooks/shared/useArray/index.md" }, // /guide/index.md
-            { text: "useArrayMap", link: "../hooks/useArrayMap.md" }, // /guide/two.md
-            { text: "useArrayFind", link: "../hooks/useArrayFind.md" }, // /guide/two.md
-            { text: "useArrayEvery", link: "../hooks/useArrayEvery.md" }, // /guide/one.md
-            { text: "useArrayFilter", link: "../hooks/useArrayFilter.md" }, // /guide/one.md
-          ],
+          items: hooksSiderBar
         },
       ],
       "/utils/": [
         {
           text: "Guide",
-          items: [
-            // This shows `/guide/index.md` page.
-            { text: "Index", link: "/guide/" }, // /guide/index.md
-            { text: "One", link: "/guide/one" }, // /guide/one.md
-            { text: "Two", link: "/guide/two" }, // /guide/two.md
-          ],
+          items: utilsSiderBar
         },
       ],
       "/components/": [
@@ -77,3 +71,4 @@ const functionSiderBar = getFunctionSiderBar;
 function getFunctionSiderBar() {
   // TODO: handle export siderBar
 }
+
