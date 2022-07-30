@@ -7,7 +7,7 @@ const percisionReversoContext = {
 
 /**
  * Format unix time to date string
- * @param dstr
+ * @param unixTime
  * The unix time string
  *
  * @param precision
@@ -17,12 +17,17 @@ const percisionReversoContext = {
  * Change the default options, year | month | day| hour | minute | second
  */
 export function formatTime(
-  dstr: string,
+  unixTime: string,
   precision?: Percision,
   options?: Intl.DateTimeFormatOptions
 ) {
-  const lang = localStorage.getItem('lang') ?? []
-  const time = Number(dstr) * (precision ? percisionReversoContext[precision] : 0)
+  let lang
+  if (typeof window !== 'undefined') {
+    lang = window.localStorage.getItem('lang')
+  } else {
+    lang = 'zh-CN'
+  }
+  const time = Number(unixTime) * (precision ? percisionReversoContext[precision] : 0)
 
   const defaultOptions: Intl.DateTimeFormatOptions = {
     year: 'numeric',
