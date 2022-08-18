@@ -1,8 +1,9 @@
-import { resolve } from 'path'
-import { getSiderBar } from '../helper/getSiderBar.js'
+import { resolve } from "path";
+import { getSiderBar } from "../helper/getSiderBar.js";
 
-const utilsSiderBar = getSiderBar('utils')
-const hooksSiderBar = getSiderBar('hooks')
+const utilsSiderBar = getSiderBar("utils");
+const hooksSiderBar = getSiderBar("hooks");
+const componentsBar = getSiderBar("components");
 
 export default {
   title: "boleTools",
@@ -31,16 +32,20 @@ export default {
       "/hooks/": [
         {
           text: "Array",
-          items: hooksSiderBar
+          items: hooksSiderBar,
         },
       ],
       "/utils/": [
         {
           text: "Guide",
-          items: utilsSiderBar
+          items: utilsSiderBar,
         },
       ],
       "/components/": [
+        {
+          text: "Charts",
+          items: componentsBar,
+        },
         {
           text: "Components",
           items: [
@@ -71,4 +76,3 @@ const functionSiderBar = getFunctionSiderBar;
 function getFunctionSiderBar() {
   // TODO: handle export siderBar
 }
-
