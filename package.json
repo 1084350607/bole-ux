@@ -11,6 +11,8 @@
     "test": "vitest"
   },
   "devDependencies": {
+    "sass": "^1.54.9",
+    "sass-loader": "^13.0.2",
     "vitepress": "^1.0.0-alpha.4",
     "vitest": "^0.19.1",
     "vue": "^3.2.37"

@@ -7,7 +7,7 @@
 | Property        | Description       | needed | Type | Default |
 | ------------- |:-------------:| :-----:| :-----:| :----: |
 | option      | ECharts Option  | true | EChartsOption \| MutiOption | None |
-| type      | ECharts type  |  | ChartType | None |
+| type      | ECharts type  | false | ChartType | None |
 | mutiType      | is mutiType  | false | Boolean | false |
 
 when the `mutiType` is true, option type is `MutiOption`
@@ -23,7 +23,8 @@ export type MutiOption = {
 
 ```
 
-## Demo
+
+
 ```vue
 <template>
   <BaseChart class="chart" mutiType :type="currentType" :option="option" />
